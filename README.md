@@ -57,7 +57,7 @@ JavaScript:
     $ venv/Scripts/activate
 
     //Linux or MacOS
-    $source venv/bin/activate
+    $ source venv/bin/activate
     ```
 
 - Install dependencies:
