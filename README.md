@@ -5,7 +5,6 @@
 - [About](#about)
 - [Dependencies](#dependencies)
 - [Getting Started](#getting_started)
-
 <br>
 
 ## About <a name = "about"></a>
@@ -33,7 +32,6 @@ CSS:
 
 JavaScript:
 - [JQuery](https://jquery.com/)
-
 <br>
 
 ## Getting Started <a name = "getting_started"></a>
@@ -76,6 +74,5 @@ JavaScript:
     ```
 
 - Access the site via localhost [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
-
 <br>
 
