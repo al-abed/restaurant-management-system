@@ -1,4 +1,4 @@
-# <div align="center">CP317 - Fall 2021 - Restaurant Management System<br>[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]()</div>
+# <div align="center">CP317 - Fall 2021 - Restaurant Management System<br>[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/mBuilt/restaurant-management-system)</div>
 
 ## Table of Contents
 
