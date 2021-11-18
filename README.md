@@ -27,11 +27,6 @@ Python Packages:
 SQL:
 - [SQLite3](https://sqlite.org/index.html)
 
-CSS:
-- [Bootstrap5](https://getbootstrap.com/)
-
-JavaScript:
-- [JQuery](https://jquery.com/)
 <br>
 
 ## Getting Started <a name = "getting_started"></a>
