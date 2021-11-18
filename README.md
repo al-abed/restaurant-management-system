@@ -22,7 +22,6 @@ Languages:
 Python Packages:
 - [Django 3.2.9](https://www.djangoproject.com/)
 - [Crispy Forms 1.13.0](https://django-crispy-forms.readthedocs.io/en/latest/index.html)
-- [Crispy Bootstrap5](https://github.com/django-crispy-forms/crispy-bootstrap5)
 
 SQL:
 - [SQLite3](https://sqlite.org/index.html)
