@@ -17,11 +17,9 @@ Languages:
 - SQL
 - HTML
 - CSS
-- JavaScript
 
 Python Packages:
 - [Django 3.2.9](https://www.djangoproject.com/)
-- [Crispy Forms 1.13.0](https://django-crispy-forms.readthedocs.io/en/latest/index.html)
 
 SQL:
 - [SQLite3](https://sqlite.org/index.html)
