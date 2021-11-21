@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Menu</h1>
+    {% for food in food_objects %}
+        <p>{{ food }}</br>
+            {{ food.price }}</br>
+            {{ food.description }}
+        </p>
+    {% endfor %}
+</body>
+</html>
