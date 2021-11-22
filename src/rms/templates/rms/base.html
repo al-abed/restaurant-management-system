@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.8">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 
     <title> RMS </title>
 </head>
 <body>
+<!-- Original Block, will be erased once coding is done
     <nav>
         <div id="navbar">
             <a href="" class='navbar-header ' style='color: rebeccapurple'>RMS</a>
@@ -17,10 +18,20 @@
                 <a href="" class="navbar-link">Food</a>
             </div>
         </div>
-    </nav>
-    {% block content %}
-    <!-- inherited content here -->
-    {% endblock content %}
+    </nav>-->
+	<!-- Menu -->
+	<nav class="navbar navbar-default">
+		<div class="navbar-header">
+                <a href="" class="navbar-brand">Food List</a>
+                <a href="" class="navbar-brand">Food</a>
+		</div>
+	</nav>
+	
+	{% block content %}
+	<!-- inherited content here -->
+	{% endblock content %}
+
+	
 </body>
 
 
