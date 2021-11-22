@@ -67,7 +67,9 @@ SQL:
     ```
 
 - Access the site via localhost [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
-- Access Admin via [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
+
+- Access Admin panel via [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
+    
     ```
     user: admin
     pass: 12345
