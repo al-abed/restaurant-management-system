@@ -17,11 +17,10 @@ Languages:
 - SQL
 - HTML
 - CSS
-- JavaScript
 
 Python Packages:
 - [Django 3.2.9](https://www.djangoproject.com/)
-- [Crispy Forms 1.13.0](https://django-crispy-forms.readthedocs.io/en/latest/index.html)
+- [Pillow 8.4.0](https://pillow.readthedocs.io/en/stable/)
 
 SQL:
 - [SQLite3](https://sqlite.org/index.html)
@@ -68,5 +67,10 @@ SQL:
     ```
 
 - Access the site via localhost [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+- Access Admin via [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
+    ```
+    user: admin
+    pass: 12345
+    ```
 <br>
 
