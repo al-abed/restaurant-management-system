@@ -13,14 +13,15 @@ Web-application based, handles all of the basic operating functions of a restaur
 
 ## Dependencies <a name = "dependencies"></a>
 Languages:
-- Python
+- Python (3.9.5)
 - SQL
 - HTML
 - CSS
 
 Python Packages:
 - [Django 3.2.9](https://www.djangoproject.com/)
-- [Pillow 8.4.0](https://pillow.readthedocs.io/en/stable/)
+- *Deprecated*: ~~Pillow 8.4.0~~
+- Replaced By: [django-resized 0.3.11](https://github.com/un1t/django-resized)
 
 SQL:
 - [SQLite3](https://sqlite.org/index.html)
