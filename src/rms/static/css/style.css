@@ -1,3 +1,119 @@
-p {
-  color: red;
+
+/* Global Font */
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Style the body */
+body {
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #000000;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: rgb(65, 63, 63);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+}
+.flex-vertical {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flex-horizontal {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  margin: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.flex-sm {
+  margin: 5px;
+  padding: 5px;
+  align-items:center;
+}
+
+.card {
+  display: flex;
+  border-style:solid;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.fs30{
+  font-size:30px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
+  margin: 60px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+}
+
+/* Footer */
+.footer {
+ background-color: rgb(65, 63, 63);
+ color:white;
+ font-size:12px;
+ padding:1em;
+ flex-shrink:0;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
 }
