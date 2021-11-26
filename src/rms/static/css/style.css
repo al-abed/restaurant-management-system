@@ -66,10 +66,6 @@ body {
   flex-wrap: wrap;
 }
 
-.flex-sm {
-  
-}
-
 .card {
   display: flex;
   border-style:solid;
