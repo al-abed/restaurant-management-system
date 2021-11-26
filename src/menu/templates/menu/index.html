@@ -5,86 +5,99 @@
 
 <main class="content">
 <!-- Title -->
-  <div class="flex-container center">
+  <div class="flex center heading">
     <div class="flex-column text-center">
-      <div class="fs30">
-        Menu
-      </div>
-      <div>
-        View our selection of nutritious food.
-      </div>
+      <div class="title">Menu</div>
+      <div>View our selection of nutritious food.</div>
     </div>
   </div>
 
   <!-- Generated Food -->
-  <div class="flex-container center">
+  <div class="flex center">
+    <div class="vertical w25">
+      
+      <!-- Appetizers -->
+      <div class="center text-center">
+          <text class="bold">Appetizers</text>
+          <hr>
+        <div class="flex horizontal center box">
+          {% for food in food_objects %}
+          {% if food.type == 'AP' %}
 
-    <!-- Appetizers -->
-    <div class="flex-vertical">
-      <div class="flex-sm center text-center">
-        Appetizers
-      <div class="flex-container flex-horizontal center text-center">
-        {% for food in food_objects %}
-        {% if food.type == 'AP' %}
+          <div class="flex card">
+            <img src="{{ food.image.url }}" class="card-img">
+            <div class="card-text text-center">
+                <div class="bold">{{ food }}</div>
+                <div class="bold green">${{ food.price }}</div>
+                <div>
+                  {{food.description}}
+                </div>
+            </div>
+          </div>
 
-        <div class="flex-container flex-vertical card">
-          <img src="{{ food.image.url }}" class="img">
-          <p>
-            {{ food }}</br>
-            ${{ food.price }}</br>
-            {{food.description}}
-          </p>
+          {% endif %}
+          {% endfor %}
         </div>
-
-        {% endif %}
-        {% endfor %}
       </div>
-    </div>
   
 
-    <!-- Mains -->
-    <div class="flex-vertical">
-      <div class="flex-sm center text-center">
-        Mains
-      <div class="flex-container flex-horizontal center text-center">
-        {% for food in food_objects %}
-        {% if food.type == 'MN' %}
+      <!-- Mains -->
+      <div class="center text-center">
+        <text class="bold">Mains</text>
+        <hr>
+        <div class="flex horizontal center box">
+          {% for food in food_objects %}
+          {% if food.type == 'MN' %}
 
-        <div class="flex-container flex-vertical card">
-          <img src="{{ food.image.url }}" class="img">
-          <p>
-            {{ food }}</br>
-            ${{ food.price }}</br>
-          </p>
+          <div class="flex card">
+            <img src="{{ food.image.url }}" class="card-img">
+            <div class="card-text text-center">
+                <div class="bold">{{ food }}</div>
+                <div class="bold green">${{ food.price }}</div>
+                <div>
+                  {% if food.description %}
+                  {{food.description}}
+                  {% else %}
+                  No Description Available.
+                  {% endif %}
+                </div>
+            </div>
+          </div>
+
+            {% endif %}
+            {% endfor %}
         </div>
-
-        {% endif %}
-        {% endfor %}
       </div>
-    </div>
 
-    <!-- Dessert -->
-    <div class="flex-vertical">
-      <div class="flex-sm center text-center">
-        Dessert
-      <div class="flex-container flex-horizontal center text-center">
-        {% for food in food_objects %}
-        {% if food.type == 'DT' %}
+      <!-- Dessert -->
+      <div class="center text-center">
+        <text class="bold">Desserts</text>
+        <hr>
+        <div class="flex horizontal center box">
+          {% for food in food_objects %}
+          {% if food.type == 'DT' %}
 
-        <div class="flex-container flex-vertical card">
-          <img src="{{ food.image.url }}" class="img">
-          <p>
-            {{ food }}</br>
-            ${{ food.price }}</br>
-            {{food.description}}
-          </p>
+          <div class="flex card">
+            <img src="{{ food.image.url }}" class="card-img">
+            <div class="card-text text-center">
+                <div class="bold">{{ food }}</div>
+                <div class="bold green">${{ food.price }}</div>
+                <div>
+                  {% if food.description %}
+                  {{food.description}}
+                  {% else %}
+                  No Description Available.
+                  {% endif %}
+                </div>
+            </div>
+          </div>
+
+          {% endif %}
+          {% endfor %}
         </div>
-
-        {% endif %}
-        {% endfor %}
       </div>
-    </div>
 
+    </div>
   </div>
 
 
