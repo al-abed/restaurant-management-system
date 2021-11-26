@@ -7,7 +7,7 @@
 <!-- Title -->
   <div class="flex center heading">
     <div class="flex-column text-center">
-      <div class="title">Menu</div>
+      <div class="title bold">Menu</div>
       <div>View our selection of nutritious food.</div>
     </div>
   </div>
@@ -19,7 +19,7 @@
       <!-- Appetizers -->
       <div class="center text-center">
           <text class="bold">Appetizers</text>
-          <hr>
+          <hr class="w66">
         <div class="flex horizontal center box">
           {% for food in food_objects %}
           {% if food.type == 'AP' %}
@@ -44,7 +44,7 @@
       <!-- Mains -->
       <div class="center text-center">
         <text class="bold">Mains</text>
-        <hr>
+        <hr class="w66">
         <div class="flex horizontal center box">
           {% for food in food_objects %}
           {% if food.type == 'MN' %}
@@ -72,7 +72,7 @@
       <!-- Dessert -->
       <div class="center text-center">
         <text class="bold">Desserts</text>
-        <hr>
+        <hr class="w66">
         <div class="flex horizontal center box">
           {% for food in food_objects %}
           {% if food.type == 'DT' %}

@@ -132,12 +132,20 @@ body {
   max-width: 75%;
 }
 
+.w66{
+  max-width: 33.33%;
+}
+
 /*----------------------------------*/
 
 /* Text Formatting */
 
 .title {
   font-size: 30px;
+}
+
+.sub-title {
+  font-size: 25px;
 }
 
 /* Weight/Color Formatting */
@@ -156,7 +164,6 @@ body {
 
 hr{
   box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
-  max-width: 33.33%;
 }
 
 /*----------------------------------*/
