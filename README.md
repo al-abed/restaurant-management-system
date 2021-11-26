@@ -20,8 +20,8 @@ Languages:
 
 Python Packages:
 - [Django 3.2.9](https://www.djangoproject.com/)
-- *Deprecated*: ~~Pillow 8.4.0~~
-- Replaced By: [django-resized 0.3.11](https://github.com/un1t/django-resized)
+- [Pillow 8.4.0](https://pillow.readthedocs.io/en/stable/)
+- [django-resized 0.3.11](https://github.com/un1t/django-resized)
 
 SQL:
 - [SQLite3](https://sqlite.org/index.html)
@@ -58,6 +58,12 @@ SQL:
 
     ```
     $ pip install -r requirements.txt
+    ```
+
+- Change directory into src:
+
+    ```
+    $ cd src
     ```
 
 - Running the application:
