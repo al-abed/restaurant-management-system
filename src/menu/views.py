@@ -14,4 +14,4 @@ def food_list_view(request):
         'food_objects': food_objects
     }
 
-    return render(request, "menu/index.html", context)
+    return render(request, "menu/menu.html", context)

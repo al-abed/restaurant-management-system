@@ -1,0 +1,54 @@
+{% extends "rms/base.html" %}
+
+{% block content %}
+{% load static %}
+
+<main class="content">
+    <!-- Title -->
+    <div class="flex center heading">
+        <div class="flex-column text-center">
+            <div class="title bold">CP317</br>Software Engineering<hr></div>
+            <div class="sub-title">Fall 2021</div>
+          </div>
+    </div>
+
+    <!-- Body Wrapper-->
+    <div class="flex vertical center">
+        
+        <!-- Content -->
+        <div class="flex center">
+            
+            <div class="box">
+                <div class="title text-center">
+                    Goal of this project
+                    <hr>
+                </div>
+                
+        
+                <div class="text-center">
+                    To develop a Restaurant Management System utilizing Object Oriented Programming principles.
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex center">
+            <div class="vertical box">
+                <div class="title text-center">
+                    Future Plans
+                </div>
+                <hr>
+        
+                <div>
+                    <ul>
+                        <li>Shopping Cart</li>
+                        <li>More modular design</li>
+                        <li>Logins</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+{% endblock content %}
