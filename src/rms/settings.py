@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'home',
     'menu',
     'about',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -126,7 +127,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #Location of static files
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'rms/static'), ]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'rms/static'), 'media/']
 #collectstatic will put all static files in {base_dir}/static
 STATIC_ROOT  = os.path.join(BASE_DIR, 'static')
 

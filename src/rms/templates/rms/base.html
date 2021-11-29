@@ -8,28 +8,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
 
 <div class="wrapper">
 <!-- Header -->
-<div class="header center title"> 
-        <h1>Restaurant<h1 style="color: red;text-shadow: 0 0 3px #ff0000;">X</h1></h1>
-</div>
+<header class="flex vertical center"> 
+        <div class="text box12">
+            RestaurantX
+        </div>
+        
+        <!-- Shopping Cart -->
+        <div>
+            <a href="{% url 'cart' %}"><i class="material-icons" style="font-size:30px;color:gray" alt="Cart">shopping_cart</i></a>
+        </div>
+
+</header>
+
 
 <!-- Navigation Bar -->
 <div class="navbar center">
         <a href="{% url 'home' %}">Home</a>
         <a href="{% url 'menu' %}">Menu</a>
         <a href="{% url 'about' %}">About Us</a>
-        <a href="#">Location</a>
         <a href="/admin">Admin</a>
 </div>
 
+<main class="content">
 {% block content %}
 <!-- inherited content here -->
 {% endblock content %}
+</main>
 
 <!-- Footer -->
 <div class="footer text-center">
