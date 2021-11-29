@@ -123,3 +123,4 @@ venv
 pip-selfcheck.json
 
 # End of https://www.toptal.com/developers/gitignore/api/venv,pycharm
+src/rms/__pycache__/settings.cpython-39.pyc
