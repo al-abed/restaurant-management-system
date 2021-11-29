@@ -21,7 +21,7 @@
           <hr class="w66">
         <div class="flex horizontal center box">
           {% for food in food_objects %}
-          {% if food.type == 'AP' %}
+          {% if food.course == 'AP' %}
 
           <div class="flex card">
             <img src="{{ food.image.url }}" class="card-img">
@@ -46,7 +46,7 @@
         <hr class="w66">
         <div class="flex horizontal center box">
           {% for food in food_objects %}
-          {% if food.type == 'MN' %}
+          {% if food.course == 'MN' %}
 
           <div class="flex card">
             <img src="{{ food.image.url }}" class="card-img">
@@ -54,11 +54,7 @@
                 <div class="bold">{{ food }}</div>
                 <div class="bold green">${{ food.price }}</div>
                 <div>
-                  {% if food.description %}
                   {{food.description}}
-                  {% else %}
-                  No Description Available.
-                  {% endif %}
                 </div>
             </div>
           </div>
@@ -74,7 +70,7 @@
         <hr class="w66">
         <div class="flex horizontal center box">
           {% for food in food_objects %}
-          {% if food.type == 'DT' %}
+          {% if food.course == 'DT' %}
 
           <div class="flex card">
             <img src="{{ food.image.url }}" class="card-img">
@@ -82,11 +78,7 @@
                 <div class="bold">{{ food }}</div>
                 <div class="bold green">${{ food.price }}</div>
                 <div>
-                  {% if food.description %}
                   {{food.description}}
-                  {% else %}
-                  No Description Available.
-                  {% endif %}
                 </div>
             </div>
           </div>
