@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from menu.views import food_list_view
+from menu.views import food_list_view, updateItem
 from home.views import home
 from about.views import about
 from cart.views import cart
@@ -15,6 +15,8 @@ urlpatterns = [
     path('menu/', food_list_view, name='menu'),
     path('cart/', cart, name='cart'),
     path('admin/', admin.site.urls),
+
+    path('menu/update_item/', updateItem, name='update_item')
 ]
 
 #ALLOWS PROCESSING OF STATIC ITEMS LOCALLY

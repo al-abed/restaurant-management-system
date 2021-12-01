@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.http import JsonResponse
+import json
 from .models import Food
 
 # Create your views here.
@@ -15,3 +17,12 @@ def food_list_view(request):
     }
 
     return render(request, "menu/menu.html", context)
+
+def updateItem(request):
+    data = json.loads(request.data)
+    productId = data['productId']
+    action = data['action']
+
+    print('ProductId: ', productId)
+    print('Action: ', action)
+    return JsonResponse('Item was added', safe = False)
