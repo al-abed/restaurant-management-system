@@ -8,6 +8,7 @@ class Food(models.Model):
         ('AP', 'Appetizer'),
         ('MN', 'Main'),
         ('DT', 'Dessert'),
+        ('DR', 'Drink'),
     ]
     course = models.CharField(max_length = 2, choices = course_choices, null = True)
     price = models.DecimalField(null=True,max_digits=4,decimal_places=2)

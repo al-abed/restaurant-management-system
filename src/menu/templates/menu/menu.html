@@ -28,7 +28,9 @@
             <div class="card-text text-center">
                 <div class="bold">{{ food }}</div>
                 <div class="bold green">${{ food.price }}</div>
-                <button data-product= "{{food}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart"> Add to Cart </button>
+                <div class="box12">
+                <button data-product= "{{food}}" data-action="add" class="add-btn update-cart"> Add to Cart </button>
+                </div>
                 <div>
                   {{food.description}}
                 </div>
@@ -54,7 +56,9 @@
             <div class="card-text text-center">
                 <div class="bold">{{ food }}</div>
                 <div class="bold green">${{ food.price }}</div>
-                <button data-product= "{{food}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart"> Add to Cart </button>
+                <div class="box12">
+                  <button data-product= "{{food}}" data-action="add" class="add-btn update-cart"> Add to Cart </button>
+                </div>
                 <div>
                   {{food.description}}
                 </div>
@@ -66,7 +70,7 @@
         </div>
       </div>
 
-      <!-- Dessert -->
+      <!-- Desserts -->
       <div class="center text-center box">
         <text class="bold">Desserts</text>
         <hr class="w66">
@@ -79,7 +83,36 @@
             <div class="card-text text-center">
                 <div class="bold">{{ food }}</div>
                 <div class="bold green">${{ food.price }}</div>
-                <button data-product= "{{food}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart"> Add to Cart </button>
+                <div class="box12">
+                  <button data-product= "{{food}}" data-action="add" class="add-btn update-cart"> Add to Cart </button>
+                </div>
+                <div>
+                  {{food.description}}
+                </div>
+            </div>
+          </div>
+
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="center text-center box">
+        <text class="bold">Drinks</text>
+        <hr class="w66">
+        <div class="flex horizontal center box">
+          {% for food in food_objects %}
+          {% if food.course == 'DR' %}
+
+          <div class="flex card">
+            <img src="{{ food.image.url }}" class="card-img">
+            <div class="card-text text-center">
+                <div class="bold">{{ food }}</div>
+                <div class="bold green">${{ food.price }}</div>
+                <div class="box12">
+                  <button data-product= "{{food}}" data-action="add" class="add-btn update-cart"> Add to Cart </button>
+                </div>
                 <div>
                   {{food.description}}
                 </div>
